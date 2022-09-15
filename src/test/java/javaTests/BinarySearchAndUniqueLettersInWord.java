@@ -2,7 +2,7 @@ package javaTests;
 
 import java.util.*;
 
-public class BinarySearch {
+public class BinarySearchAndUniqueLettersInWord {
     public static void main(String[] args) {
         List<Integer> list = new ArrayList<Integer>();
         List<Integer> llist = new LinkedList<Integer>();
@@ -12,8 +12,11 @@ public class BinarySearch {
 
         String word = "engineering";
         String example = "abcirghjkl";
+
+        //find letters of example that occur in word too
         uniqueLettersInWord(word, example);
-       // System.out.println(findInSortedArray(new int[]{3, 5, 8, 9, 10, 45}, 3));
+
+        // System.out.println(findInSortedArray(new int[]{3, 5, 8, 9, 10, 45}, 3));
     }
 
     private static boolean findInSortedArray(int[] arr, int num) {

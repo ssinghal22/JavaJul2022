@@ -1,18 +1,8 @@
 package javaTests;
 
-public class practice {
-     String name = "soniya";
-
+public class ReverseAlphabets {
     public static void main(String[] args){
-        String title = "mom";
-//        System.out.println("my name is " + name);
-//        System.out.println("my title is " + title);
         System.out.println(reverseAlphabets(";a@b#>c?!"));
-    }
-
-    private static void test() {
-//        System.out.println("my name is " + name);
-//        System.out.println("my title is " + title);
     }
 
     private static String reverseAlphabets(String test){
@@ -20,6 +10,7 @@ public class practice {
         String aphabetsReversed = "";
         String alphabets = "";
         //get string of alphabets
+
         for (int i = 0; i < test.length(); i++){
             if (test.charAt(i) >= 'a' & test.charAt(i) <= 'z'){
                 alphabets += test.charAt(i);

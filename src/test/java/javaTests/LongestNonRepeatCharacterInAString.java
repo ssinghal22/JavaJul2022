@@ -1,5 +1,6 @@
 package javaTests;
 
+import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
 
@@ -12,19 +13,23 @@ public class LongestNonRepeatCharacterInAString {
         System.out.println(longestStr(test));
     }
 
-    private static String longestStr(String test) {
-        String result = "";
-        Set<Character> set = new LinkedHashSet<Character>();
+    private static String longestStr(String test){
+        String longest = "";
+        Set<Character> set = new HashSet<>();
 
-        for (int i = 0; i < test.length(); i++) {
-            if (!set.contains(test.charAt(i))) {
+        if (test == null || test.length() == 0){
+            return longest;
+        }
+
+        for (int i = 0; i < test.length(); i++){
+            if (!set.contains(test.charAt(i))){
+                longest += test.charAt(i);
                 set.add(test.charAt(i));
-            } else break;
+            }
+            else {
+                return longest;
+            }
         }
-
-        for (char c : set) {
-            result += c;
-        }
-        return result;
+        return longest;
     }
 }

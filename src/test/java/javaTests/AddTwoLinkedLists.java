@@ -1,6 +1,7 @@
 package javaTests;
 
 import java.util.LinkedList;
+// Add 2 lists from back. They have different size. If sum >= 10, add first digit, second digit goes as carryover
 
 public class AddTwoLinkedLists {
     public static void main(String[] args) {
@@ -13,8 +14,8 @@ public class AddTwoLinkedLists {
         list2.add(4);
         list2.add(8);
         list2.add(5);
-       // list2.add(6);
-       // list2.add(7);
+        list2.add(6);
+        list2.add(7);
         addTwoLists(list1, list2);
     }
 
@@ -50,13 +51,13 @@ public class AddTwoLinkedLists {
                 --j;
             }
 
-            if (i >= 0){
+            if (i > 0){
                 while (i >= 0) {
                     result.add(list2.get(i));
                     --i;
                 }
             }
-            else if (j >= 0){
+            else if (j > 0){
                 while (j >= 0) {
                     result.add(list1.get(j));
                     --j;
