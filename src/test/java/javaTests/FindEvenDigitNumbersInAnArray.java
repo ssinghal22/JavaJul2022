@@ -7,6 +7,7 @@ public class FindEvenDigitNumbersInAnArray {
     private static int solution(int[] a){
         int count = 0;
         for (int num: a){
+
             //count digits in num
             int digit = 0;
             int digitCount = 0;
