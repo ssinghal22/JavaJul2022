@@ -1,5 +1,6 @@
 package javaTests;
 //Find all substrings with unique chars. If their indexes are different, they qualify, like two 'a' at two different indices
+//code doesn't seem correct per above ask
 
 import java.util.ArrayList;
 import java.util.HashSet;

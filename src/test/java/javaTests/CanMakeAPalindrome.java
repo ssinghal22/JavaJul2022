@@ -1,11 +1,11 @@
 package javaTests;
 
 // bool CanMakePalindrome ( string str)
-// CanMakePalindrome() must return true, if any rearrangement of ALL the characters in the given string can #make a palindrome
-// CanMakePalindrome() must return false, if any rearrangement of ALL the characters in the given string does #not create a  palindrome
+// CanMakePalindrome() must return true, if any rearrangement of ALL the characters in the given string can make a palindrome
+// CanMakePalindrome() must return false, if any rearrangement of ALL the characters in the given string does not create a palindrome
 
-// example : "aab" , can make a palindrome – returns true
-// example : "aabbccdef". cannot make a palindrome - returns false
+// example : "aab" can make a palindrome – returns true
+// example : "aabbccdef" cannot make a palindrome - returns false
 // example : "dedeff" can make a palindrome – returns true
 // example : "xyzz" cannot make a palindrome – returns false
 
