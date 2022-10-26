@@ -18,7 +18,8 @@ public class TwoDimnArray {
     }
 
     private static String codeMessage(String message, int rows, int cols) {
-        Character[][] arr = new Character[rows][cols];
+        char[][] arr = new char[rows][cols];
+        //char[] ch = message.toCharArray();
         int k = 0;
 
         for (int i = 0; i < rows; i++) {
@@ -30,7 +31,7 @@ public class TwoDimnArray {
         String code = "";
         for (int i = 0; i < cols; i++) {
             for (int j = 0; j < rows; j++) {
-code += arr[j][i];
+                code += arr[j][i];
             }
         }
 

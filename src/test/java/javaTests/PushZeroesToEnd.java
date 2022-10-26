@@ -24,6 +24,7 @@ public class PushZeroesToEnd {
 
     public static void main(String[] args){
       //  System.out.println("final " + Arrays.toString(pushZeroesToEnd(new int[] {1, 0, 0, 2, 0, 3, 0, 4})));
+
     List<Integer> list1 = new ArrayList<Integer>();
     list1.add(1);
     list1.add(2);
